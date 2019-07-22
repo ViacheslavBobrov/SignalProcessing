@@ -12,8 +12,8 @@ def present_audio_sounds(experiment_number, record_duration=120):
     iti = 0.3
     jitter = 0.2
     recording_path = os.path.join("data",
-                                  "signal_timestamps_%s_%ssec_%s.csv" % (
-                                      experiment_number, record_duration, strftime("%Y-%m-%d-%H.%M.%S", gmtime())))
+                                  "%s_a_signal_timestamps_%s_%ssec.csv" % (strftime("%Y-%m-%d-%H.%M.%S", gmtime()),
+                                                                         experiment_number, record_duration,))
 
     start_time = time()
     signal_timestamps = []
